@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LiNi LiNi — Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap 5 CSS (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar navbar-expand-md sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+          <img
+            src="pics/logo.png"
+            height="48"
+            class="d-none d-sm-block"
+            alt="logo"
+            onerror="this.style.display = 'none'"
+          />
+          LiNi LiNi<em class="ms-1 fst-italic" style="color: var(--rose)"
+            >- Store</em
+          >
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="box-shadow: none"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="mainNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto gap-md-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ====== HOME / HERO ====== -->
+    <header id="home" class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-md-6">
+            <div class="hero-badge">✦ Handmade K-Pop Collection</div>
+            <h1 class="hero-title mb-4">
+              Made With<br />
+              <em class="fst-italic" style="color: var(--pink)">K-Pop</em><br />
+              Love
+            </h1>
+            <p class="hero-description">
+              Handmade keychains, stickers, and collectibles inspired by your
+              favourite K-Pop groups. Each piece is crafted with love — just for
+              fans, by a fan.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mb-5">
+              <a href="#products" class="btn-primary-custom">See Collection</a>
+              <a href="#about" class="btn-outline-custom">Our Story</a>
+            </div>
+            <div class="d-flex align-items-center gap-4">
+              <div>
+                <div class="stat-val">100%</div>
+                <div class="stat-label">Handmade</div>
+              </div>
+              <div class="stat-divider"></div>
+              <div>
+                <div class="stat-val">K-Pop</div>
+                <div class="stat-label">Inspired</div>
+              </div>
+              <div class="stat-divider"></div>
+              <div>
+                <div class="stat-val">Fan</div>
+                <div class="stat-label">Made</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-center">
+            <div
+              class="position-relative"
+              style="width: 100%; max-width: 320px"
+            >
+              <div class="hero-card">
+                <div class="hero-card-img">
+                  <img src="pics/set2.png" alt="K-Pop Set" />
+                </div>
+                <div
+                  style="
+                    font-family: &quot;Playfair Display&quot;, serif;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    margin-bottom: 4px;
+                  "
+                >
+                  K-Pop Set
+                </div>
+                <div
+                  style="
+                    font-size: 0.6rem;
+                    letter-spacing: 0.14em;
+                    text-transform: uppercase;
+                    color: var(--rose);
+                    margin-bottom: 4px;
+                  "
+                >
+                  What's in this set
+                </div>
+                <div class="hero-card-description">
+                  Keychain · Mini Sticker · Pin · Photobooth Keychain · Sticker
+                  A5
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <span
+                    style="
+                      font-family: &quot;Playfair Display&quot;, serif;
+                      font-size: 1.4rem;
+                      color: var(--pink);
+                    "
+                    >$5.00</span
+                  >
+                </div>
+              </div>
+              <div
+                class="badge-float"
+                style="
+                  top: 12px;
+                  left: -20px;
+                  animation: float 4s ease-in-out infinite 0.5s;
+                "
+              >
+                <span>💖</span> Top Selling
+              </div>
+              <div
+                class="badge-float badge-float-dark d-flex flex-wrap gap-3 mb-5"
+                style="
+                  bottom: -10px;
+                  right: -16px;
+                  animation: float 4s ease-in-out infinite 1s;
+                "
+              >
+                <a
+                  href="#contact"
+                  class="btn-custom"
+                  style="color: inherit; text-decoration: none"
+                >
+                  Custom Orders Open
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====== PRODUCTS ====== -->
+    <section
+      id="products"
+      class="py-5"
+      style="padding-top: 80px !important; padding-bottom: 80px !important"
+    >
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-divider">Our Collection</div>
+          <h2 class="section-title">
+            Explore
+            <em class="fst-italic" style="color: var(--pink)">Products</em>
+          </h2>
+          <p class="explore-description">
+            Every piece is handmade and K-Pop inspired — from cute keychains to
+            shiny stickers and collectible goodies.
+          </p>
+        </div>
+
+        <!-- Category pills -->
+        <div class="d-flex flex-wrap gap-2 justify-content-center mb-5">
+          <button class="pill active">All</button>
+          <a href="#setbox" class="pill">Set Box</a>
+          <a href="#keychain" class="pill">Keychain</a>
+          <a href="#pin" class="pill">Pin</a>
+          <a href="#sticker" class="pill">Sticker</a>
+          <a href="#lomocard" class="pill">Lomocard</a>
+          <a href="#binder" class="pill">Binder</a>
+          <a href="#cardholder" class="pill">Cardholder</a>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="row g-4">
+          <!-- Set 5$ -->
+          <div id="setbox" class="col-sm-6 col-lg-4">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="pics/set5.jpg" alt="Set Box" />
+                <span class="badge-abs badge-popular">Popular</span>
+              </div>
+
+              <div class="product-body">
+                <div class="product-cat">Set Box</div>
+                <h3 class="product-name">K-Pop Set</h3>
+                <div class="product-cat">You will get</div>
+                <p class="product-desc">
+                  Keychain · Mini Sticker · Pin · Photobooth Keychain · Sticker
+                  A5. Perfect for fans as K-Pop solo idol.
+                </p>
+                <div class="product-price">$5.00</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Set 10$ -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="pics/set10.jpg" alt="Set Box" />
+                <span class="badge-abs badge-limited">Limited</span>
+              </div>
+              <div class="product-body">
+                <div class="product-cat">Set Box</div>
+                <h3 class="product-name">K-Pop Big Set</h3>
+                <div class="product-cat">You will get</div>
+                <p class="product-desc">
+                  Keychain · Mini Sticker · Sticker A5 · Lomocard · Cardholder.
+                  Perfect for K-Pop groups.
+                </p>
+                <div class="product-price">$10.00</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Acrylic Keychain -->
+          <div id="keychain" class="col-sm-6 col-lg-4">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="pics/arcylicKC (3).jpg" alt="Keychain" />
+              </div>
+              <div class="product-body">
+                <div class="product-cat">Keychain</div>
+                <h3 class="product-name">Acrylic Idol Keychain</h3>
+                <p class="product-desc">
+                  Double-sided clear acrylic keychain featuring your favourite
+                  idol. Custom design available.
+                </p>
+                <div class="product-price">$0.75</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Keychain Handmade -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="pics/keychainHM.jpg" alt="Keychain" />
+                <span class="badge-abs badge-new">New</span>
+              </div>
+              <div class="product-body">
+                <div class="product-cat">Keychain</div>
+                <h3 class="product-name">Charm Acrylic Keychain</h3>
+                <p class="product-desc">
+                  Handmade charm with a sparkling bead and double-side acrylic
+                  frame. Custom design available.
+                </p>
+                <div class="product-price">$1.50</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Photobooth Keychain -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="pics/photoboothKC (2).jpg" alt="Keychain" />
+                <span class="badge-abs badge-new">New</span>
+              </div>
+              <div class="product-body">
+                <div class="product-cat">Keychain</div>
+                <h3 class="product-name">Photobooth Acrylic Keychain</h3>
+                <p class="product-desc">
+                  Double-sided clear acrylic keychain featuring your favourite
+                  idol. Custom design available.
+                </p>
+                <div class="product-price">$1.25</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pin Handmade -->
+          <div id="pin" class="col-sm-6 col-lg-4">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="pics/pinHM.jpg" alt="Pin" />
+                <span class="badge-abs badge-new">New</span>
+                <span class="badge-abs badge-limited badge-second"
+                  >Limited</span
+                >
+              </div>
+              <div class="product-body">
+                <div class="product-cat">Pin</div>
+                <h3 class="product-name">Safety Pin Charm</h3>
+                <p class="product-desc">
+                  Handmade safety pin charm with your favorite name. Perfect for
+                  bags or jackets!
+                </p>
+                <div class="product-price">$1.50</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pin -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="pics/pin (2).jpg" alt="Pin" />
+              </div>
+              <div class="product-body">
+                <div class="product-cat">Pin</div>
+                <h3 class="product-name">Pin-Back Button</h3>
+                <p class="product-desc">
+                  High-quality pin-back buttons featuring your favorite idols.
+                  Perfect for decorating bags, jackets, and hats!
+                </p>
+                <div class="product-price">$1.25</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mini Sticker -->
+          <div id="sticker" class="col-sm-6 col-lg-4">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="pics/ministicker (2).jpg" alt="Sticker" />
+                <span class="badge-abs badge-popular">Popular</span>
+              </div>
+              <div class="product-body">
+                <div class="product-cat">Sticker</div>
+                <h3 class="product-name">K-Pop Mini Sticker</h3>
+                <p class="product-desc">
+                  A full sheet of cute, die-cut stickers inspired by your
+                  favourite group.
+                </p>
+                <div class="product-price">$1.00</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sticker A5 -->
+          <div class="col-sm-6 col-lg-4">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="pics/stickera5.jpg" alt="Sticker" />
+              </div>
+              <div class="product-body">
+                <div class="product-cat">Sticker</div>
+                <h3 class="product-name">K-Pop Sticker A5</h3>
+                <p class="product-desc">
+                  Premium-quality stickers featuring your favorite groups and
+                  artists. Perfect for scrapbooking, journaling, and decorating!
+                </p>
+                <div class="product-price">$0.50</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lomo Card -->
+          <div id="lomocard" class="col-sm-6 col-lg-4">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="pics/lomocard.jpg" alt="Lomocard" />
+              </div>
+              <div class="product-body">
+                <div class="product-cat">Lomocard</div>
+                <h3 class="product-name">K-Pop Lomocard</h3>
+                <p class="product-desc">
+                  High-quality collectible lomo card sets featuring your
+                  favorite artists. A must-have for every collector!
+                </p>
+                <div class="product-price">$1.50 - $2.00</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mini Binder -->
+          <div id="binder" class="col-sm-6 col-lg-4">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="pics/minibinder.jpg" alt="Mini Binder" />
+                <span class="badge-abs badge-new">New</span>
+              </div>
+              <div class="product-body">
+                <div class="product-cat">Binder</div>
+                <h3 class="product-name">Mini Binder</h3>
+                <p class="product-desc">
+                  Compact, aesthetic binder to store and protect your favorite
+                  photocards.
+                </p>
+                <div class="product-price">$2.50</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Holder -->
+          <div id="cardholder" class="col-sm-6 col-lg-4">
+            <div class="product-card">
+              <div class="product-thumb">
+                <img src="pics/cardholder.jpg" alt="Cardholder" />
+              </div>
+              <div class="product-body">
+                <div class="product-cat">Cardholder</div>
+                <h3 class="product-name">Cardholder Silver Style</h3>
+                <p class="product-desc">
+                  Stylish protective case for your favorite photocards. Includes
+                  a ball chain for easy attachment to bags!
+                </p>
+                <div class="product-price">$1.50</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT US ====== -->
+    <section
+      id="about"
+      class="py-5 about-section"
+      style="padding-top: 80px !important; padding-bottom: 80px !important"
+    >
+      <div class="container">
+        <div class="section-divider">Who We Are</div>
+        <div class="row align-items-center g-5 mt-1">
+          <div class="col-md-5">
+            <div class="about-card text-center">
+              <div class="profile-image">
+                <img src="pics/Profile.PNG" alt="LiNi LiNi Store Team" />
+              </div>
+              <blockquote
+                class="fst-italic"
+                style="
+                  font-size: 1.2rem;
+                  color: rgba(71, 2, 59, 0.75);
+                  line-height: 1.5;
+                "
+              >
+                "LiNi LiNi was born from the first syllables of the names of
+                four people who love K-Pop, enjoy collecting K-Pop merchandise,
+                and dreamed of creating their own shop."
+              </blockquote>
+              <div class="section-divider mt-4">
+                LiNi LiNi - Store · Est. 2025
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <h2 class="section-title mb-4">
+              A Store Born From
+              <em class="fst-italic" style="color: var(--pink)">Passion</em>
+            </h2>
+            <p class="about-description">
+              LiNi LiNi is a handmade K-Pop goods store created by a fan, for
+              fans. We started on 9 September 2025 by selling Acrylic Keychain
+              at Walk Street. — Nowaday, we have 8 members who work together to
+              give our customers good products, good services and good prices.
+            </p>
+            <p class="about-description">
+              Every item is made by hand with care and attention to detail.
+              Whether it's a keychain, a sticker sheet, or a gift box — it's
+              made with love for the K-Pop community.
+            </p>
+            <div class="row g-3">
+              <div class="col-4">
+                <div class="feature-tile">
+                  <div class="emoji">🤍</div>
+                  <div class="label">Handmade</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="feature-tile">
+                  <div class="emoji">🌟</div>
+                  <div class="label">Fan-Made</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="feature-tile">
+                  <div class="emoji">🎵</div>
+                  <div class="label">K-Pop Soul</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT US ====== -->
+    <section
+      id="contact"
+      class="py-5"
+      style="padding-top: 80px !important; padding-bottom: 80px !important"
+    >
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-divider">Get In Touch</div>
+          <h2 class="section-title">
+            Let's <em class="fst-italic" style="color: var(--pink)">Connect</em>
+          </h2>
+          <p
+            class="mt-2"
+            style="
+              color: var(--muted);
+              font-weight: 300;
+              font-size: 0.9rem;
+              max-width: 380px;
+              margin: 12px auto 0;
+            "
+          >
+            Have a question or want a custom order? Reach us on your favourite
+            platform — we'd love to hear from you!
+          </p>
+        </div>
+        <div
+          class="row g-4 justify-content-center"
+          style="max-width: 720px; margin: 0 auto"
+        >
+          <div class="col-sm-4">
+            <a
+              href="https://www.instagram.com/lini_lini_store?igsh=MWZ0M3BwcnF5eHA3dw%3D%3D&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card"
+            >
+              <div class="contact-icon">
+                <img src="pics/IG.png" height="40" />
+              </div>
+              <div class="contact-label">Instagram</div>
+              <div class="contact-handle">@lini_lini_store</div>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a
+              href="https://www.tiktok.com/@lini_lini_store?_r=1&_t=ZS-972dLWljjOx"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card"
+            >
+              <div class="contact-icon">
+                <img src="pics/TT.png" height="40" />
+              </div>
+              <div class="contact-label">TIKTOK</div>
+              <div class="contact-handle">@lini_lini_store</div>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a
+              href="https://www.facebook.com/profile.php?id=61568484972749"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card"
+            >
+              <div class="contact-icon">
+                <img src="pics/FB.png" height="40" />
+              </div>
+              <div class="contact-label">Facebook</div>
+              <div class="contact-handle">LiNi LiNi Store</div>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <a
+              href="https://t.me/lini_lini_store"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-card"
+            >
+              <div class="contact-icon">
+                <img src="pics/TELE.png" height="40" />
+              </div>
+              <div class="contact-label">TELEGRAM</div>
+              <div class="contact-handle">+855 78 252 509</div>
+            </a>
+          </div>
+        </div>
+        <p
+          class="text-center mt-4"
+          style="font-size: 0.8rem; color: rgba(71, 2, 59, 0.35)"
+        >
+          We reply within 24 hours ·
+          <span style="color: var(--rose)">Mon – Sun, 9am – 6pm</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="pt-5 pb-4 px-3">
+      <div class="container">
+        <div
+          class="row g-5 pb-4"
+          style="border-bottom: 1px solid rgba(255, 255, 255, 0.1)"
+        >
+          <div class="col-md-5">
+            <div class="brand mb-3">
+              LiNi LiNi<em class="fst-italic" style="color: var(--pink)">
+                - Store</em
+              >
+            </div>
+            <p
+              style="
+                font-size: 0.85rem;
+                max-width: 280px;
+                font-weight: 300;
+                color: rgba(255, 255, 255, 0.5);
+                line-height: 1.7;
+              "
+            >
+              Handmade K-Pop goods made by a fan, for fans. Keychains, stickers,
+              lomocards and more — each piece crafted with love.
+            </p>
+            <div class="d-flex gap-2 mt-3">
+              <a
+                href="https://www.instagram.com/lini_lini_store?igsh=MWZ0M3BwcnF5eHA3dw%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-social-btn"
+              >
+                <img src="pics/instagram.png" height="25" class="white-icon" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@lini_lini_store?_r=1&_t=ZS-972dLWljjOx"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-social-btn"
+              >
+                <img src="pics/tik-tok.png" height="25" class="white-icon" />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61568484972749"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-social-btn"
+              >
+                <img src="pics/facebook.png" height="25" class="white-icon" />
+              </a>
+              <a
+                href="https://t.me/lini_lini_store"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-social-btn"
+              >
+                <img src="pics/telegram.png" height="25" class="white-icon" />
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <h6>Quick Links</h6>
+            <div class="d-flex flex-column gap-2">
+              <a href="#home">Home</a>
+              <a href="#products">Products</a>
+              <a href="#about">About Us</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <h6>Categories</h6>
+            <div class="d-flex flex-column gap-2">
+              <a href="#setbox">Set Box</a>
+              <a href="#keychain">Keychain</a>
+              <a href="#pin">Pin</a>
+              <a href="#sticker">Sticker</a>
+              <a href="#lomocard">Lomocard</a>
+              <a href="#binder">Binder</a>
+              <a href="#cardholder">Cardholder</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="footer-bottom d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3"
+        >
+          <div class="d-flex gap-3">
+            <a>
+              <img src="pics/location-pin.png" height="20" class="white-icon" />
+              Phnom Penh, Cambodia/ Pop up at Walk Street, 5:30pm - 9:30pm
+            </a>
+          </div>
+          <span>&copy; 2025 LiNi LiNi Store. Built with Bootstrap 5.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

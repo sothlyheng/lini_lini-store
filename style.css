@@ -154,9 +154,12 @@ html {
 }
 @media (max-width: 576px) {
   .badge-float {
-    position: static;
+    position: static !important;
     margin-top: 10px;
-  }
+    bottom: auto !important;
+    right: auto !important;
+    left: auto !important;
+    transform: none !important;
 }
 
 /* HERO CARD */
